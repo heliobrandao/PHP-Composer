@@ -2,11 +2,6 @@
     "name": "heliobrandao/buscador-cursos",
     "description": "Projeto que busca cursos no site Alura",
     "type": "library",
-    "autoload": {
-        "psr-4": {
-            "Heliobrandao\\BuscadorCursos\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "heliobrandao",
@@ -17,5 +12,13 @@
         "guzzlehttp/guzzle": "^7.4",
         "symfony/dom-crawler": "^4.2",
         "symfony/css-selector": "^5.4"
+    },
+    "autoload": {
+        "files": [
+            "./functions.php"
+        ],
+        "psr-4": {
+            "Alura\\BuscadorDeCursos\\": "src/"
+        }
     }
 }
